@@ -118,15 +118,13 @@ body {
 }
 
 /* HERO */
-.hero .container {
+.hero {
   padding-top: 188px;
   padding-bottom: 188px;
-}
-.hero {
   background-color: #2e2f42;
 }
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -186,7 +184,7 @@ body {
 
 /* TEAM */
 .team-container {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 .team {
   background: #f4f4fd;
@@ -250,8 +248,10 @@ body {
 }
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+
 }
 .portfolio-list-item {
   width: calc((100% - 24px * 2) / 3);
@@ -286,6 +286,7 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-bottom: 16px;
+  display: inline-block;
 }
 .color-footer {
   color: #f4f4fd;
